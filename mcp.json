@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "tum-sybil-resistant-ai": {
+      "command": "cargo",
+      "args": [
+        "run",
+        "--release",
+        "--quiet"
+      ],
+      "env": {
+        "RUST_LOG": "info",
+        "HACKATHON_TRACK": "TUM Munich",
+        "PROJECT_TICKER": "TUMSYBIL"
+      },
+      "tools": [
+        {
+          "name": "verify_tumsybil_invariants",
+          "description": "Verifies deterministic invariants for TUM Sybil-Resistant AI on TUM Munich."
+        },
+        {
+          "name": "execute_tumsybil_action",
+          "description": "Executes authenticated Identity state transition."
+        }
+      ]
+    }
+  }
+}
